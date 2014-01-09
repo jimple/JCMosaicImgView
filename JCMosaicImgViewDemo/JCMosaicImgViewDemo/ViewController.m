@@ -46,6 +46,7 @@
     CGFloat fImgHeight = [JCMosaicImgView imgHeightByImg:arrImgURL];
     CGFloat fImgWidth = [JCMosaicImgView imgWidthByImg:arrImgURL];
 
+    // 1.创建对象   2.设置图片下载队列对象   3.输入图片URL数组。
     _mosaicImgView = [[JCMosaicImgView alloc] initWithFrame:Rect(0.0f, 0.0f, fImgWidth, fImgHeight)];
     [_mosaicImgView setImgListOper:_objImgListOper];
     [_mosaicImgView showWithImgURLs:arrImgURL];
